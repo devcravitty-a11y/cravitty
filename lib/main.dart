@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import 'Providers/BottomNavProvider.dart';
+import 'Restaurant/Registration/RegistrationScreen.dart';
 import 'Screens/ClaimDetails/ClaimDetailsScreen.dart';
 import 'Screens/HomeScreen/HomeScreen.dart';
 import 'Screens/LoginScreen/LoginProviders/LoginProvider.dart';
@@ -43,7 +44,7 @@ class MyApp extends StatelessWidget {
           
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         ),
-        home: SplashScreen(),
+        home: RegistrationScreen(),
       ),
     );
   }
