@@ -1,3 +1,4 @@
+import 'package:cravitty/Screens/Restaurant/HomeScreen/RestuarantHomeScreen.dart';
 import 'package:cravitty/Screens/Restaurant/Registration/widgets/RadioButtonForTypeWidget.dart';
 import 'package:cravitty/Screens/Restaurant/Registration/widgets/RegitrationForm.dart';
 import 'package:cravitty/Screens/Restaurant/Registration/widgets/TimePickdropDown.dart';
@@ -45,7 +46,9 @@ class RegistrationScreen extends StatelessWidget {
                 RestaurantTypeSelector(),
                 ImageUploadWidget(title: "Upload Restaurant logo",),
                               ImageUploadWidget(title: "Upload Restaurant Image",),
-                Basicbutton(title: "Register", onPressed: (){},),            
+                Basicbutton(title: "Register", onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => RestuaranthomeScreen()));
+                },),            
               ],
             ),
           ),

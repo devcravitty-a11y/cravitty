@@ -2,6 +2,7 @@
 import 'package:cravitty/components/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class DashBordWidget extends StatelessWidget {
 
@@ -26,20 +27,36 @@ class DashBordWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 100,
+      height: 71,
       width: width,
       decoration: BoxDecoration(
         color:color,
         borderRadius: BorderRadius.circular(10),
       ),
+      padding: EdgeInsets.all(10),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Row(
             children: [
               SvgPicture.asset(image),
-              Text(count),
+              SizedBox(width: 10,),  
+              Text(
+                count,
+               style: GoogleFonts.inter(
+              fontSize: 18,
+              color: AppColors.blackColor,
+              fontWeight: FontWeight.w600,
+            )),
             ]),
-            Text(title)
+            SizedBox(height: 5,),
+            Text(title,
+            style: GoogleFonts.inter(
+              fontSize: 12,
+              color: AppColors.appCl4F4F4F,
+              fontWeight: FontWeight.w500,
+            ))
         ],
       ),
     );
