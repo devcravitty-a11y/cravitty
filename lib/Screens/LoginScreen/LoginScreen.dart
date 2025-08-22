@@ -1,3 +1,4 @@
+import 'package:cravitty/Screens/Restaurant/Registration/RegistrationScreen.dart';
 import 'package:cravitty/Screens/UserScreens/ClaimDetails/ClaimDetailsScreen.dart';
 import 'package:cravitty/Screens/LoginScreen/LoginProviders/LoginProvider.dart';
 import 'package:cravitty/components/paths.dart';
@@ -222,12 +223,20 @@ class LoginScreen extends StatelessWidget {
                                 elevation: 0,
                               ),
                               onPressed: () {
+                                if(loginPro.currentIndex == 0){
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
                                     builder: (context) => BottomNavigation(),
                                   ),
+                                );}else{
+                                    Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => RegistrationScreen(),
+                                  ),
                                 );
+                                }
                               },
                               child: Text(
                                 'Login',
