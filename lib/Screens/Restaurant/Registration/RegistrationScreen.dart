@@ -3,6 +3,7 @@ import 'package:cravitty/Screens/Restaurant/Registration/widgets/RegitrationForm
 import 'package:cravitty/Screens/Restaurant/Registration/widgets/TimePickdropDown.dart';
 import 'package:cravitty/Screens/Restaurant/Registration/widgets/imageUploadWidgets.dart';
 import 'package:cravitty/Screens/Restaurant/Registration/widgets/locationPickButton.dart';
+import 'package:cravitty/components/Widgets/Buttons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -44,26 +45,7 @@ class RegistrationScreen extends StatelessWidget {
                 RestaurantTypeSelector(),
                 ImageUploadWidget(title: "Upload Restaurant logo",),
                               ImageUploadWidget(title: "Upload Restaurant Image",),
-SizedBox(
-                            width: double.infinity,
-                            height: 48,
-                            child: ElevatedButton(
-                              style: ElevatedButton.styleFrom(
-                                backgroundColor: AppColors.appPrimaryColor,
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(8),
-                                ),
-                                elevation: 0,
-                              ),
-                              onPressed: () {
-                               
-                              },
-                              child: Text(
-                                'Register',
-                                style: TextStyle(fontSize: 16, color: Colors.white),
-                              ),
-                            ),
-                          ),            
+                Basicbutton(title: "Register", onPressed: (){},),            
               ],
             ),
           ),
@@ -72,4 +54,3 @@ SizedBox(
     );
   }
 }
-

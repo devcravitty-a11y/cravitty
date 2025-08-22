@@ -14,7 +14,6 @@ class ImageUploadWidget extends StatelessWidget {
     return DottedBorder(
       options: RoundedRectDottedBorderOptions(
         radius: Radius.circular(18),
-    padding: const EdgeInsets.all(8),
     color:AppColors.grayColor,
     strokeWidth: 2,
     dashPattern: [10, 5],

@@ -1,4 +1,5 @@
 import 'package:cravitty/Providers/ReataurantProviders/RegistrationProvider.dart';
+import 'package:cravitty/Screens/Restaurant/CreateDeals/CreateDealsScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -46,7 +47,7 @@ class MyApp extends StatelessWidget {
           
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         ),
-        home: RegistrationScreen(),
+        home: CreateDealsScreen(),
       ),
     );
   }

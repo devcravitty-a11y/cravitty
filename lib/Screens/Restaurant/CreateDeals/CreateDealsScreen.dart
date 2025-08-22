@@ -1,5 +1,7 @@
 import 'package:cravitty/Screens/Restaurant/Registration/widgets/RegitrationForm.dart';
+import 'package:cravitty/Screens/Restaurant/Registration/widgets/imageUploadWidgets.dart';
 import 'package:cravitty/Screens/Restaurant/Registration/widgets/locationPickButton.dart';
+import 'package:cravitty/components/Widgets/Buttons.dart';
 import 'package:cravitty/components/Widgets/appBar.dart';
 import 'package:cravitty/components/colors.dart';
 import 'package:flutter/material.dart';
@@ -59,9 +61,17 @@ class CreateDealsScreen extends StatelessWidget {
               hint: "Description",
               title: "Deal Description",
             ),
+
+            ImageUploadWidget(title: "Upload dish image"),
           ],
         ),
       ),
+     floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+     floatingActionButton:             Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16),
+      
+      child: Basicbutton(title: "Create Deal", onPressed: (){},)),
+
       );
   }
 }

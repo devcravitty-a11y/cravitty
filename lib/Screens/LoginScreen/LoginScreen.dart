@@ -12,7 +12,6 @@ import '../UserScreens/BottomNavigation.dart';
 import '../UserScreens/HomeScreen/HomeScreen.dart';
 import 'Widgets/tabBarWidget.dart';
 
-
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
 
@@ -21,11 +20,13 @@ class LoginScreen extends StatelessWidget {
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.width;
     return Consumer<LoginProvider>(
-      builder: (context,loginPro,_) {
+      builder: (context, loginPro, _) {
         return SafeArea(
           top: false,
           child: Scaffold(
-            backgroundColor:loginPro.currentIndex == 0 ? AppColors.appThemeColor :AppColors.appClFFECD3 ,
+            backgroundColor: loginPro.currentIndex == 0
+                ? AppColors.appThemeColor
+                : AppColors.appClFFECD3,
             body: SingleChildScrollView(
               child: Column(
                 children: [
@@ -36,7 +37,9 @@ class LoginScreen extends StatelessWidget {
                     decoration: BoxDecoration(
                       color: Colors.red,
                       image: DecorationImage(
-                        image: AssetImage('${AppPaths.imagesPath}imageLogin.png'),
+                        image: AssetImage(
+                          '${AppPaths.imagesPath}imageLogin.png',
+                        ),
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -45,13 +48,17 @@ class LoginScreen extends StatelessWidget {
                       children: [
                         Padding(
                           padding: const EdgeInsets.only(bottom: 14),
-                          child: SvgPicture.asset("${AppPaths.iconsSvg}whiteLogo.svg"),
+                          child: SvgPicture.asset(
+                            "${AppPaths.iconsSvg}whiteLogo.svg",
+                          ),
                         ),
                         Container(
                           height: 30,
                           width: double.infinity,
                           decoration: BoxDecoration(
-                            color:loginPro.currentIndex == 0 ? AppColors.appThemeColor :AppColors.appClFFECD3 ,
+                            color: loginPro.currentIndex == 0
+                                ? AppColors.appThemeColor
+                                : AppColors.appClFFECD3,
                             borderRadius: BorderRadius.only(
                               topLeft: Radius.circular(20),
                               topRight: Radius.circular(20),
@@ -65,12 +72,16 @@ class LoginScreen extends StatelessWidget {
                   // LOGIN FORM SECTION
                   Container(
                     width: double.infinity,
-                    color:loginPro.currentIndex == 0 ? AppColors.appThemeColor :AppColors.appClFFECD3 ,
+                    color: loginPro.currentIndex == 0
+                        ? AppColors.appThemeColor
+                        : AppColors.appClFFECD3,
                     child: Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 24.0, vertical: 0),
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 24.0,
+                        vertical: 0,
+                      ),
                       child: Column(
                         children: [
-
                           TabButton(width: width),
                           SizedBox(height: 28),
                           Align(
@@ -108,11 +119,14 @@ class LoginScreen extends StatelessWidget {
                                 ),
                                 children: [
                                   TextSpan(text: 'Email '),
-                                  TextSpan(text: '*', style: GoogleFonts.inter(
-                                    fontWeight: FontWeight.w400,
-                                    fontSize: 14,
-                                    color: AppColors.appPrimaryColor,
-                                  ),),
+                                  TextSpan(
+                                    text: '*',
+                                    style: GoogleFonts.inter(
+                                      fontWeight: FontWeight.w400,
+                                      fontSize: 14,
+                                      color: AppColors.appPrimaryColor,
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),
@@ -127,8 +141,11 @@ class LoginScreen extends StatelessWidget {
                               focusedBorder: loginScreenTextFormBorder,
                               disabledBorder: loginScreenTextFormBorder,
                               enabledBorder: loginScreenTextFormBorder,
-                              border:loginScreenTextFormBorder,
-                              contentPadding: EdgeInsets.symmetric(vertical: 13, horizontal: 13),
+                              border: loginScreenTextFormBorder,
+                              contentPadding: EdgeInsets.symmetric(
+                                vertical: 13,
+                                horizontal: 13,
+                              ),
                             ),
                           ),
                           SizedBox(height: 16),
@@ -143,11 +160,14 @@ class LoginScreen extends StatelessWidget {
                                 ),
                                 children: [
                                   TextSpan(text: 'Password '),
-                                  TextSpan(text: '*', style: GoogleFonts.inter(
-                                    fontWeight: FontWeight.w400,
-                                    fontSize: 14,
-                                    color: AppColors.appPrimaryColor,
-                                  ),),
+                                  TextSpan(
+                                    text: '*',
+                                    style: GoogleFonts.inter(
+                                      fontWeight: FontWeight.w400,
+                                      fontSize: 14,
+                                      color: AppColors.appPrimaryColor,
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),
@@ -155,37 +175,39 @@ class LoginScreen extends StatelessWidget {
 
                           SizedBox(height: 4),
 
-                              TextFormField(
-                                obscureText: true,
-                                style: TextStyle(fontSize: 16),
-                                decoration: InputDecoration(
-                                  hintText: 'Password',
-                                  filled: true,
-                                  fillColor: Colors.white,
-                                  focusedBorder: loginScreenTextFormBorder,
-                                  disabledBorder: loginScreenTextFormBorder,
-                                  enabledBorder: loginScreenTextFormBorder,
-                                  border:loginScreenTextFormBorder,
-                                  contentPadding: EdgeInsets.symmetric(vertical: 13, horizontal: 13),
-                                ),
-                              ),
-                         if( loginPro.isLogin)
-                          Align(
-                            alignment: Alignment.centerRight,
-                            child: TextButton(
-                              onPressed: () {},
-                              child: Text(
-                                'Forgot password',
-                                style: GoogleFonts.inter(
-                                  fontSize: 13,
-                                  color: AppColors.appPrimaryColor,
-                                  decoration: TextDecoration.underline,
-                                  decorationColor: AppColors.appPrimaryColor,
-
-                                ),
+                          TextFormField(
+                            obscureText: true,
+                            style: TextStyle(fontSize: 16),
+                            decoration: InputDecoration(
+                              hintText: 'Password',
+                              filled: true,
+                              fillColor: Colors.white,
+                              focusedBorder: loginScreenTextFormBorder,
+                              disabledBorder: loginScreenTextFormBorder,
+                              enabledBorder: loginScreenTextFormBorder,
+                              border: loginScreenTextFormBorder,
+                              contentPadding: EdgeInsets.symmetric(
+                                vertical: 13,
+                                horizontal: 13,
                               ),
                             ),
                           ),
+                          if (loginPro.isLogin)
+                            Align(
+                              alignment: Alignment.centerRight,
+                              child: TextButton(
+                                onPressed: () {},
+                                child: Text(
+                                  'Forgot password',
+                                  style: GoogleFonts.inter(
+                                    fontSize: 13,
+                                    color: AppColors.appPrimaryColor,
+                                    decoration: TextDecoration.underline,
+                                    decorationColor: AppColors.appPrimaryColor,
+                                  ),
+                                ),
+                              ),
+                            ),
 
                           SizedBox(height: 18),
                           SizedBox(
@@ -203,11 +225,16 @@ class LoginScreen extends StatelessWidget {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => BottomNavigation()));
+                                    builder: (context) => BottomNavigation(),
+                                  ),
+                                );
                               },
                               child: Text(
                                 'Login',
-                                style: TextStyle(fontSize: 16, color: Colors.white),
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  color: Colors.white,
+                                ),
                               ),
                             ),
                           ),
@@ -217,16 +244,23 @@ class LoginScreen extends StatelessWidget {
                             height: 48,
                             child: OutlinedButton.icon(
                               icon: SvgPicture.asset(
-                                '${AppPaths.iconsSvg}googleIcon.svg',),
+                                '${AppPaths.iconsSvg}googleIcon.svg',
+                              ),
                               label: Text(
-
-                                  loginPro.isLogin ? 'Sign in with Google': 'Sign up with Google',
-                                  style: TextStyle(color: Colors.black, fontSize: 16)),
+                                loginPro.isLogin
+                                    ? 'Sign in with Google'
+                                    : 'Sign up with Google',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 16,
+                                ),
+                              ),
                               style: OutlinedButton.styleFrom(
                                 backgroundColor: Colors.white,
-                                side: BorderSide(color:AppColors.appClE7E7E7),
+                                side: BorderSide(color: AppColors.appClE7E7E7),
                                 shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(8)),
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
                               ),
                               onPressed: () {},
                             ),
@@ -260,7 +294,8 @@ class LoginScreen extends StatelessWidget {
                                 ),
                               ),
                             ],
-                          ),                        SizedBox(height: 32),
+                          ),
+                          SizedBox(height: 32),
                         ],
                       ),
                     ),
@@ -270,7 +305,7 @@ class LoginScreen extends StatelessWidget {
             ),
           ),
         );
-      }
+      },
     );
   }
 }
