@@ -3,9 +3,9 @@ import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../../components/colors.dart';
-import '../../../components/paths.dart';
-import '../../../components/styles.dart';
+import '../../../../components/colors.dart';
+import '../../../../components/paths.dart';
+import '../../../../components/styles.dart';
 
 class LocationPickButton extends StatelessWidget {
 

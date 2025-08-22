@@ -2,7 +2,7 @@ import 'package:cravitty/components/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../Providers/ReataurantProviders/RegistrationProvider.dart';
+import '../../../../Providers/ReataurantProviders/RegistrationProvider.dart';
 
 class RestaurantTypeSelector extends StatelessWidget {
   const RestaurantTypeSelector({Key? key}) : super(key: key);

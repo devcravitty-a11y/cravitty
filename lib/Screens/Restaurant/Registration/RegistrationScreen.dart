@@ -1,14 +1,14 @@
-import 'package:cravitty/Restaurant/Registration/widgets/RadioButtonForTypeWidget.dart';
-import 'package:cravitty/Restaurant/Registration/widgets/RegitrationForm.dart';
-import 'package:cravitty/Restaurant/Registration/widgets/TimePickdropDown.dart';
-import 'package:cravitty/Restaurant/Registration/widgets/imageUploadWidgets.dart';
-import 'package:cravitty/Restaurant/Registration/widgets/locationPickButton.dart';
+import 'package:cravitty/Screens/Restaurant/Registration/widgets/RadioButtonForTypeWidget.dart';
+import 'package:cravitty/Screens/Restaurant/Registration/widgets/RegitrationForm.dart';
+import 'package:cravitty/Screens/Restaurant/Registration/widgets/TimePickdropDown.dart';
+import 'package:cravitty/Screens/Restaurant/Registration/widgets/imageUploadWidgets.dart';
+import 'package:cravitty/Screens/Restaurant/Registration/widgets/locationPickButton.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../components/colors.dart';
-import '../../components/styles.dart';
+import '../../../components/colors.dart';
+import '../../../components/styles.dart';
 
 class RegistrationScreen extends StatelessWidget {
   const RegistrationScreen({super.key});

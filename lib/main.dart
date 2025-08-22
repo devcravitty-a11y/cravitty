@@ -2,13 +2,13 @@ import 'package:cravitty/Providers/ReataurantProviders/RegistrationProvider.dart
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'Providers/BottomNavProvider.dart';
-import 'Restaurant/Registration/RegistrationScreen.dart';
-import 'Screens/ClaimDetails/ClaimDetailsScreen.dart';
-import 'Screens/HomeScreen/HomeScreen.dart';
+import 'Providers/UserProviders/BottomNavProvider.dart';
+import 'Screens/Restaurant/Registration/RegistrationScreen.dart';
+import 'Screens/UserScreens/ClaimDetails/ClaimDetailsScreen.dart';
+import 'Screens/UserScreens/HomeScreen/HomeScreen.dart';
 import 'Screens/LoginScreen/LoginProviders/LoginProvider.dart';
 import 'Screens/LoginScreen/LoginScreen.dart';
-import 'Screens/foodDetails/foodDetailsScreen.dart';
+import 'Screens/UserScreens/foodDetails/foodDetailsScreen.dart';
 import 'Screens/splashScreen.dart';
 import 'Screens/test.dart';
 import 'components/colors.dart';

@@ -1,11 +1,11 @@
-import 'package:cravitty/Screens/ClaimDetails/widgets/InfoCard.dart';
+import 'package:cravitty/Screens/UserScreens/ClaimDetails/widgets/InfoCard.dart';
 import 'package:cravitty/components/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 
-import '../../components/Widgets/appBar.dart';
+import '../../../components/Widgets/appBar.dart';
 
 
 

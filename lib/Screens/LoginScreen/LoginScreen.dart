@@ -1,4 +1,4 @@
-import 'package:cravitty/Screens/ClaimDetails/ClaimDetailsScreen.dart';
+import 'package:cravitty/Screens/UserScreens/ClaimDetails/ClaimDetailsScreen.dart';
 import 'package:cravitty/Screens/LoginScreen/LoginProviders/LoginProvider.dart';
 import 'package:cravitty/components/paths.dart';
 import 'package:flutter/material.dart';
@@ -8,8 +8,8 @@ import 'package:provider/provider.dart';
 
 import '../../components/colors.dart';
 import '../../components/styles.dart';
-import '../BottomNavigation.dart';
-import '../HomeScreen/HomeScreen.dart';
+import '../UserScreens/BottomNavigation.dart';
+import '../UserScreens/HomeScreen/HomeScreen.dart';
 import 'Widgets/tabBarWidget.dart';
 
 

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../../components/colors.dart';
-import '../../../components/styles.dart';
+import '../../../../components/colors.dart';
+import '../../../../components/styles.dart';
 
 class RegistrationFormWidget extends StatelessWidget {
   final String title;

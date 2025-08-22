@@ -1,11 +1,11 @@
-import 'package:cravitty/Screens/ClaimDetails/ClaimDetailsScreen.dart';
+import 'package:cravitty/Screens/UserScreens/ClaimDetails/ClaimDetailsScreen.dart';
 import 'package:cravitty/components/Widgets/appBar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../components/colors.dart';
-import '../../components/paths.dart';
+import '../../../components/colors.dart';
+import '../../../components/paths.dart';
 
 class FoodDealDetailsPage extends StatelessWidget {
   const FoodDealDetailsPage({super.key});

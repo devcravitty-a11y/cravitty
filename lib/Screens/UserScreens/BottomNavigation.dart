@@ -1,10 +1,10 @@
-import 'package:cravitty/Screens/HomeScreen/HomeScreen.dart';
+import 'package:cravitty/Screens/UserScreens/HomeScreen/HomeScreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:provider/provider.dart';
 
-import '../Providers/BottomNavProvider.dart';
+import '../../Providers/UserProviders/BottomNavProvider.dart';
 
 class BottomNavigation extends StatelessWidget {
   const BottomNavigation({super.key});
