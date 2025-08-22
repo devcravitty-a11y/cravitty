@@ -1,3 +1,4 @@
+import 'package:cravitty/Providers/ReataurantProviders/RegistrationProvider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
         // Add your providers here
         ChangeNotifierProvider(create: (context) => LoginProvider()),
         ChangeNotifierProvider(create: (context) => BottomNavProvider()),
+        ChangeNotifierProvider(create: (context) => RestaurantRegistrationProvider()),
       ],
       child: MaterialApp(
         showSemanticsDebugger: false,

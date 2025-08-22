@@ -1,4 +1,7 @@
+import 'package:cravitty/Restaurant/Registration/widgets/RadioButtonForTypeWidget.dart';
 import 'package:cravitty/Restaurant/Registration/widgets/RegitrationForm.dart';
+import 'package:cravitty/Restaurant/Registration/widgets/TimePickdropDown.dart';
+import 'package:cravitty/Restaurant/Registration/widgets/imageUploadWidgets.dart';
 import 'package:cravitty/Restaurant/Registration/widgets/locationPickButton.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -17,30 +20,52 @@ class RegistrationScreen extends StatelessWidget {
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(14.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                "Register",
-                style: GoogleFonts.inter(
-                  fontWeight: FontWeight.w700,
-                  fontSize: 24,
+          child: SingleChildScrollView(
+            child: Column(
+              spacing: 18,
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Register",
+                  style: GoogleFonts.inter(
+                    fontWeight: FontWeight.w700,
+                    fontSize: 24,
+                  ),
                 ),
-              ),
-              SizedBox(height: 20),
-              RegistrationFormWidget(title: "Restaurant Name ", hint: "Restaurant Name "),
-              SizedBox(height: 10),
-              RegistrationFormWidget(title: "Owner/ Manager Name ", hint: "Owner/ Manager Name "),
-              SizedBox(height: 10),
-              RegistrationFormWidget(title: "Phone Number ", hint: "Phone Number "),
-              SizedBox(height: 10),
-              RegistrationFormWidget(title: "Full Address(Street, Area, Landmark) ", hint: "Full Address "),
-              SizedBox(height: 10),
-              RegistrationFormWidget(title: "PinCode ", hint: "PinCode "),
-              SizedBox(height: 10),
-              LocationPickButton(),
-            ],
+                RegistrationFormWidget(title: "Restaurant Name ", hint: "Restaurant Name "),
+                RegistrationFormWidget(title: "Owner/ Manager Name ", hint: "Owner/ Manager Name "),
+                RegistrationFormWidget(title: "Phone Number ", hint: "Phone Number "),
+                RegistrationFormWidget(title: "Full Address(Street, Area, Landmark) ", hint: "Full Address "),
+                RegistrationFormWidget(title: "PinCode ", hint: "PinCode "),
+                LocationPickButton(),
+                OpeningHoursDropdown(),
+            
+                RestaurantTypeSelector(),
+                ImageUploadWidget(title: "Upload Restaurant logo",),
+                              ImageUploadWidget(title: "Upload Restaurant Image",),
+SizedBox(
+                            width: double.infinity,
+                            height: 48,
+                            child: ElevatedButton(
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.appPrimaryColor,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                                elevation: 0,
+                              ),
+                              onPressed: () {
+                               
+                              },
+                              child: Text(
+                                'Register',
+                                style: TextStyle(fontSize: 16, color: Colors.white),
+                              ),
+                            ),
+                          ),            
+              ],
+            ),
           ),
         ),
       ),
