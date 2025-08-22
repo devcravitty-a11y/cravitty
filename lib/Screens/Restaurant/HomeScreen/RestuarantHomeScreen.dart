@@ -1,6 +1,7 @@
 import 'package:cravitty/Screens/Restaurant/CreateDeals/CreateDealsScreen.dart';
 import 'package:cravitty/Screens/Restaurant/HomeScreen/widgets/HomeListWidget.dart';
 import 'package:cravitty/Screens/Restaurant/HomeScreen/widgets/dashBordWidgets.dart';
+import 'package:cravitty/Screens/Restaurant/VerifyDeal/verifyScreen.dart';
 import 'package:cravitty/components/Widgets/Buttons.dart';
 import 'package:cravitty/components/colors.dart';
 import 'package:cravitty/components/paths.dart';
@@ -132,7 +133,7 @@ class RestuaranthomeScreen extends StatelessWidget {
         child: SvgPicture.asset("${AppPaths.iconsSvg}Scan.svg"),
         onPressed: () {
           // Handle button press
-          Navigator.push(context, MaterialPageRoute(builder: (context) => CreateDealsScreen()));
+          Navigator.push(context, MaterialPageRoute(builder: (context) => VerifyScreen()));
         },
       ),
     ),
