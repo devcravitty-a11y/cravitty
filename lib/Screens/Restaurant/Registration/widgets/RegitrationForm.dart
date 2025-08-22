@@ -8,10 +8,12 @@ import '../../../../components/styles.dart';
 class RegistrationFormWidget extends StatelessWidget {
   final String title;
   final String hint;
+  final bool isRequired;
+  final TextInputType? keyboardType;
   final List<TextInputFormatter>? inputFormatters;
 
   const RegistrationFormWidget({
-    super.key, required this.title, required this.hint, this.inputFormatters,
+    super.key, required this.title, required this.hint, this.isRequired = true, this.keyboardType, this.inputFormatters,
   });
 
   @override
@@ -26,8 +28,8 @@ class RegistrationFormWidget extends StatelessWidget {
               fontWeight: FontWeight.w500,
               fontSize: 13,
             ),),
-            Text("*",style: GoogleFonts.inter(
-                fontWeight: FontWeight.w700,color: Colors.red)),
+           isRequired? Text("*",style: GoogleFonts.inter(
+                fontWeight: FontWeight.w700,color: Colors.red)):SizedBox(),
           ],
         ),
         SizedBox(height: 2),
